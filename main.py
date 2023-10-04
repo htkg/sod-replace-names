@@ -97,7 +97,6 @@ def parse_name(fullname):
         first_name = fullname_without_nickname.strip()
         last_name = None
 
-    print(fullname_without_nickname)
     return fullname_without_nickname, first_name, last_name, nickname
 
 
@@ -196,4 +195,4 @@ with open(os.path.join("output", city_filename), "wb") as f:
 
     logging.info(f"Saving {city_filename} to output folder...")
     f.write(bytes_file)
-    print(f"\n\nDone! Saved to the current folder: output/{city_filename}. Please backup your original file before replacing it. Remember: save games in the game refer to the filename of the city file. Please do not rename the file. New file should have exact filename as original file.\n\nMove output/{city_filename} to C:\\Users\\...\\AppData\\LocalLow\\ColePowered Games\\Shadows of Doubt\\Cities")
+    print(f"\nDone! Saved to the current folder: output/{city_filename}. Please backup your original file before replacing it. Remember: save games in the game refer to the filename of the city file. Please do not rename the file. New file should have exact filename as original file.\n\nMove output/{city_filename} to C:\\Users\\...\\AppData\\LocalLow\\ColePowered Games\\Shadows of Doubt\\Cities")
