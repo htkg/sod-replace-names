@@ -80,16 +80,16 @@ def parse_name(fullname):
         end = fullname.find("'", start + 1)
         if end != -1:  # Closing quotation is found
             nickname = fullname[start+1 : end].strip()
-            fullname_without_nickname = (fullname[:start] + fullname[end+1:]).strip()
+            fullname_without_nickname = ' '.join((fullname[:start] + fullname[end+1:]).split())
         else:
             fullname_without_nickname = fullname.strip()
             nickname = None
     else:
         fullname_without_nickname = fullname.strip()
         nickname = None
-    
+
     fullname_parts = fullname_without_nickname.split(' ')
-    
+
     if len(fullname_parts) > 1:
         first_name = fullname_parts[0].strip()
         last_name = ' '.join(fullname_parts[1:]).strip()
@@ -97,7 +97,9 @@ def parse_name(fullname):
         first_name = fullname_without_nickname.strip()
         last_name = None
 
+    print(fullname_without_nickname)
     return fullname_without_nickname, first_name, last_name, nickname
+
 
 logging.info("Reading city file...")
 cities_file, time_exec = read_cities_file(args.cities_fp)
