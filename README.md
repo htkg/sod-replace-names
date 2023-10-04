@@ -1,6 +1,7 @@
 # Shadows of Doubt | World Name Replacement: A Comprehensive Guide
 
-This document serves as a comprehensive guide to assist you in modifying names within the unique world of "Shadows of Doubt". 
+This utility changes citizens name according to the text (each new name on newline) or csv file (delimited by ;).
+Supports both .citb and .cit files.
 
 ## Manual Installation Procedure
 
