@@ -1,4 +1,4 @@
-# Shadows of Doubt | World Name Replacement: A Comprehensive Guide
+# Shadows of Doubt | World Name Replacement
 
 This utility changes citizens name according to the text (each new name on newline) or csv file (delimited by ;).
 Supports both .citb and .cit files.
